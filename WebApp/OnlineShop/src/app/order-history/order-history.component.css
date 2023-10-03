@@ -1,0 +1,25 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  margin: 0 auto; /* Center content horizontally within the parent */
+  max-width: 800px; /* Set a maximum width for the container */
+  padding: 20px; /* Add padding to the container (adjust as needed) */
+}
+
+/* Optional: Add a border to the container for visual separation */
+.table-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table (adjust as needed) */
+.mat-table {
+  width: 100%; /* Set the table to 100% width within the container */
+}
+
+/* Optional: Style the paginator (adjust as needed) */
+.mat-paginator {
+  margin-top: 10px; /* Add some space between the table and paginator */
+}

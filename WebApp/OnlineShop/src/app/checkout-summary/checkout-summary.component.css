@@ -1,0 +1,25 @@
+/* Centered content style */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed to center vertically */
+}
+
+/* Style adjustments for table and buttons */
+.table {
+  max-width: 400px; /* Adjust the maximum width as needed */
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0 auto; /* Center horizontally within the container */
+}
+
+.text-center.pt-2 {
+  margin-top: 16px; /* Adjust the top margin for the buttons */
+}
+
+/* Adjust other styles as needed */

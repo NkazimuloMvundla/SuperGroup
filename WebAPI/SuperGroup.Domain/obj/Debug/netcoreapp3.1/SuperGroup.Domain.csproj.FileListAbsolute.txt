@@ -1,0 +1,17 @@
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Domain.deps.json
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Domain.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Domain.pdb
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.AssemblyInfoInputs.cache
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.AssemblyInfo.cs
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.pdb
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.csproj.AssemblyReference.cache
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Core.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Data.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Models.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Core.pdb
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Data.pdb
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\bin\Debug\netcoreapp3.1\SuperGroup.Models.pdb
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\obj\Debug\netcoreapp3.1\SuperGroup.Domain.csproj.CopyComplete

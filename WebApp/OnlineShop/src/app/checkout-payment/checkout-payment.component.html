@@ -1,0 +1,73 @@
+
+<h2 class="text-center mt-1">Step 2: Payment</h2>
+
+<div class="p-2">
+  <form novalidate #paymentForm="ngForm">
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Card Number</mat-label>
+        <input
+          #cardNumber="ngModel"
+          matInput
+          name="cardNumber"
+          [(ngModel)]="order.payment.cardNumber"
+          required
+        />
+      </mat-form-field>
+      <div *ngIf="cardNumber.invalid" class="text-danger">
+        Please enter your card number
+      </div>
+    </div>
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Card Expiry</mat-label>
+        <input
+          #cardExpiry="ngModel"
+          matInput
+          name="cardExpiry"
+          [(ngModel)]="order.payment.cardExpiry"
+          required
+        />
+      </mat-form-field>
+      <div *ngIf="cardExpiry.invalid" class="text-danger">
+        Please enter your card expiry
+      </div>
+    </div>
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Security Code</mat-label>
+        <input
+          #cardCode="ngModel"
+          matInput
+          name="cardCode"
+          [(ngModel)]="order.payment.cardSecurityCode"
+          required
+        />
+      </mat-form-field>
+      <div *ngIf="cardCode.invalid" class="text-danger">
+        Please enter your security code
+      </div>
+    </div>
+    <div class="text-center pt-2">
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        class="m-1"
+        routerLink="/checkout/step1"
+      >
+        Back
+      </button>
+      <button
+        type="button"
+        mat-raised-button
+        color="warn"
+        [disabled]="paymentForm.invalid"
+        class="m-1"
+        routerLink="/checkout/step3"
+      >
+        Next
+      </button>
+    </div>
+  </form>
+</div>

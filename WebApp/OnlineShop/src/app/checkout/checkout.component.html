@@ -1,0 +1,59 @@
+<!-- <div class="bg-dark text-white p-2">
+  <div class="navbar-brand">SPORTS STORE</div>
+</div> -->
+<h2 class="text-center mt-2">Step 1: Your Details</h2>
+<div class="p-2">
+  <form novalidate #detailsForm="ngForm" class="centered-form">
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input
+          #name="ngModel"
+          matInput
+          name="name"
+          [(ngModel)]="order.customerName"
+          required
+        />
+      </mat-form-field>
+      <div *ngIf="name.invalid" class="text-danger">
+        Please enter your name
+      </div>
+    </div>
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input
+          #address="ngModel"
+          matInput
+          name="street"
+          [(ngModel)]="order.address"
+          required
+        />
+      </mat-form-field>
+      <div *ngIf="address.invalid" class="text-danger">
+        Please enter your address
+      </div>
+    </div>
+    <div class="text-center pt-2">
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        class="m-1"
+        (click)="navigateToCart()"
+      >
+        Back
+      </button>
+      <button
+        type="button"
+        mat-raised-button
+        color="warn"
+        [disabled]="detailsForm.invalid"
+        class="m-1"
+        (click)="navigateToStep3()"
+      >
+        Next
+      </button>
+    </div>
+  </form>
+</div>

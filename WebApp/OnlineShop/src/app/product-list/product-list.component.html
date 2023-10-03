@@ -1,0 +1,47 @@
+ <div class="table-container" style="margin-top: 2%;">
+  <mat-table [dataSource]="dataSource" class="table" matSort *ngIf="dataSource.data.length > 0; else nodata">
+    <!-- Define columns for product.Name, product.Price, and product.Description -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.Name }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Price</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.Price | currency:'ZAR':'symbol' }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.Description }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+
+        <button mat-raised-button class="mat-primary m-1 custom-button" (click)="addToCart(row)">    <mat-icon>add_shopping_cart</mat-icon></button>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Table rows -->
+    <mat-header-row *matHeaderRowDef="['name', 'price', 'description','actions']"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: ['name', 'price', 'description','actions']"></mat-row>
+  </mat-table>
+  <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+        <mat-paginator #paginator
+        (page)="handlePageEvent($event)"
+        [length]="totalItemsCount"
+        [pageSize]="itemsToTake"
+        [showFirstLastButtons]="showFirstLastButtons"
+        [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+        [hidePageSize]="true"
+        [pageIndex]="currentPage"
+        aria-label="Select page">
+      </mat-paginator>
+      <div id="page-info" *ngIf="dataSource.data.length > 0">Page {{paginator.pageIndex + 1}} of {{paginator.getNumberOfPages()}}</div>
+</div>
+
+<ng-template #nodata>
+  <h4 align="center" *ngIf="!isLoading">No data available...</h4>
+</ng-template>

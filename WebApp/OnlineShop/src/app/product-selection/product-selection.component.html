@@ -1,0 +1,18 @@
+<div class="mat-app-background">
+  <mat-toolbar color="primary">
+    <span class="navbar-brand">SPORTS STORE</span>
+    <span class="fill-remaining-space"></span>
+
+    <app-cart-summary></app-cart-summary>
+    <span>  <button mat-raised-button class="mat-primary m-1 custom-button" (click)="ViewOrders()"><span class="material-icons">
+      receipt_long
+      </span>View Orders</button></span>
+  </mat-toolbar>
+
+</div>
+<div class="row no-gutters">
+  <div class="col-3"></div>
+  <div class="col">
+    <app-product-list></app-product-list>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\bin\Debug\netcoreapp3.1\SuperGroup.Models.deps.json
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\bin\Debug\netcoreapp3.1\SuperGroup.Models.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\bin\Debug\netcoreapp3.1\SuperGroup.Models.pdb
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.csproj.AssemblyReference.cache
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.AssemblyInfoInputs.cache
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.AssemblyInfo.cs
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.csproj.CoreCompileInputs.cache
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.dll
+C:\Dev\SuperGroup\WebAPI\SuperGroup.Models\obj\Debug\netcoreapp3.1\SuperGroup.Models.pdb

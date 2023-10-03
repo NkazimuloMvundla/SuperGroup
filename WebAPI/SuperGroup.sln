@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperGroup.Web", "SuperGroup.Web\SuperGroup.Web.csproj", "{8A55817F-F43C-471C-8D00-63FA1AB5BA65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperGroup.Domain", "SuperGroup.Domain\SuperGroup.Domain.csproj", "{5C4EFEC4-1D1E-4A1C-AE86-E6C468C8E9C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{3CE100FE-98D1-4251-9887-5934AA9E59D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperGroup.Data", "SuperGroup.Data\SuperGroup.Data.csproj", "{E4C28FAD-98CC-426C-B09C-E0BEB3747295}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FFB9777C-4817-4517-A10C-C8E877CB0838}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{555BFCA7-6CB9-41C8-9E83-8C885B7EF14F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8842934C-104F-4ECA-9FF9-028C02182B3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperGroup.Core", "SuperGroup.Core\SuperGroup.Core.csproj", "{17E8C801-60CF-46EC-9DE7-78C08B31680C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperGroup.Models", "SuperGroup.Models\SuperGroup.Models.csproj", "{89693A31-CB5B-4BA9-965E-88874B4ECE71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A55817F-F43C-471C-8D00-63FA1AB5BA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A55817F-F43C-471C-8D00-63FA1AB5BA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A55817F-F43C-471C-8D00-63FA1AB5BA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A55817F-F43C-471C-8D00-63FA1AB5BA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4EFEC4-1D1E-4A1C-AE86-E6C468C8E9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4EFEC4-1D1E-4A1C-AE86-E6C468C8E9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4EFEC4-1D1E-4A1C-AE86-E6C468C8E9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4EFEC4-1D1E-4A1C-AE86-E6C468C8E9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C28FAD-98CC-426C-B09C-E0BEB3747295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C28FAD-98CC-426C-B09C-E0BEB3747295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C28FAD-98CC-426C-B09C-E0BEB3747295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C28FAD-98CC-426C-B09C-E0BEB3747295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E8C801-60CF-46EC-9DE7-78C08B31680C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E8C801-60CF-46EC-9DE7-78C08B31680C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E8C801-60CF-46EC-9DE7-78C08B31680C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E8C801-60CF-46EC-9DE7-78C08B31680C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89693A31-CB5B-4BA9-965E-88874B4ECE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89693A31-CB5B-4BA9-965E-88874B4ECE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89693A31-CB5B-4BA9-965E-88874B4ECE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89693A31-CB5B-4BA9-965E-88874B4ECE71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A55817F-F43C-471C-8D00-63FA1AB5BA65} = {555BFCA7-6CB9-41C8-9E83-8C885B7EF14F}
+		{5C4EFEC4-1D1E-4A1C-AE86-E6C468C8E9C1} = {FFB9777C-4817-4517-A10C-C8E877CB0838}
+		{E4C28FAD-98CC-426C-B09C-E0BEB3747295} = {3CE100FE-98D1-4251-9887-5934AA9E59D4}
+		{17E8C801-60CF-46EC-9DE7-78C08B31680C} = {8842934C-104F-4ECA-9FF9-028C02182B3B}
+		{89693A31-CB5B-4BA9-965E-88874B4ECE71} = {FFB9777C-4817-4517-A10C-C8E877CB0838}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {232C31D5-14EE-4125-B144-0E5C4381F01E}
+	EndGlobalSection
+EndGlobal

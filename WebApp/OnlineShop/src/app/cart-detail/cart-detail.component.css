@@ -1,0 +1,36 @@
+/* Adjust the cart container styles */
+.cart-container {
+  margin: 20px; /* Add margin to create space around the cart */
+  padding: 20px; /* Add padding for inner content */
+  border: 1px solid #ddd; /* Add a border for visual separation */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #fff; /* Set a background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the table and table headers */
+.mat-elevation-z8 {
+  width: 100%; /* Make the table fill the container */
+}
+
+/* Style the buttons */
+.custom-button {
+  margin: 10px; /* Add margin around the buttons */
+  min-width: 150px; /* Set a minimum width for consistency */
+}
+
+/* Center the button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Add hover and active styles for buttons */
+.custom-button:hover {
+  background-color: #3f51b5; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.custom-button:active {
+  background-color: #303f9f; /* Change background color on click */
+}

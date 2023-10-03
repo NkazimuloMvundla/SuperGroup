@@ -1,0 +1,58 @@
+<div class="m-1 cart-container">
+  <h2 class="mat-h2 text-center">Your Cart</h2>
+  <mat-table class="mat-elevation-z8" [dataSource]="dataSource" *ngIf="dataSource.data.length > 0; else emptyCart">
+    <ng-container matColumnDef="quantity">
+      <mat-header-cell *matHeaderCellDef>Quantity</mat-header-cell>
+      <mat-cell *matCellDef="let sel">
+        <mat-form-field class="cart-quantity">
+          <mat-label>Quantity</mat-label>
+          <input matInput type="number" [(ngModel)]="sel.quantity" style="width: 5em" min="0"/>
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>Product</mat-header-cell>
+      <mat-cell *matCellDef="let sel">{{ sel.name }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef class="text-right">Price</mat-header-cell>
+      <mat-cell *matCellDef="let sel">{{ sel.price | currency: 'ZAR': 'symbol': '2.2-2' }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="subtotal">
+      <mat-header-cell *matHeaderCellDef class="text-right">Subtotal</mat-header-cell>
+      <mat-cell *matCellDef="let sel">
+        {{ (sel.quantity * sel.price) | currency: 'ZAR': 'symbol': '2.2-2' }}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let sel;let i = index;" class="text-center">
+        <button mat-icon-button color="warn"  (click)="updateQuantity(i,sel.productId, 0)">
+          <mat-icon>remove_shopping_cart</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="['quantity', 'name', 'price', 'subtotal', 'actions']"></mat-header-row>
+    <mat-row *matRowDef="let sel; columns: ['quantity', 'name', 'price', 'subtotal', 'actions']"></mat-row>
+  </mat-table>
+
+  <ng-template #emptyCart>
+    <p class="mat-body-1 text-center">Your cart is empty</p>
+  </ng-template>
+
+  <div class="text-right">
+    <p class="mat-body-1">Total: {{ cart.totalPrice | currency: 'ZAR': 'symbol': '2.2-2' }}</p>
+  </div>
+</div>
+
+<div class="text-center">
+  <button mat-raised-button class="mat-primary m-1 custom-button" (click)="navigateToHome()">Continue Shopping</button>
+  <button mat-raised-button class="mat-secondary m-1 custom-button" (click)="onCheckoutButtonClick()" [disabled]="cart.selections.length === 0">
+    Checkout
+  </button>
+</div>

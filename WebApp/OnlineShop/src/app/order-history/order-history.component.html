@@ -1,0 +1,45 @@
+
+<div class="table-container">
+  <h3>Orders history</h3>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="OrderId">
+      <mat-header-cell *matHeaderCellDef> OrderId </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.Orders.OrderId }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="CustomerName">
+      <mat-header-cell *matHeaderCellDef> Customer Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.Orders.CustomerName }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="ProductName">
+      <mat-header-cell *matHeaderCellDef> Product Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.Products.Name }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Quantity">
+      <mat-header-cell *matHeaderCellDef> Quantity </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.CartLines.Quantity }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="OrderedDate">
+      <mat-header-cell *matHeaderCellDef> Ordered Date </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        {{ element.Orders.OrderedDate | date: 'yyyy-MM-dd HH:mm:ss' }}
+      </mat-cell>
+    </ng-container>
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator
+        [length]="totalItemsCount"
+        [showFirstLastButtons]="showFirstLastButtons"
+        [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+        [hidePageSize]="true"
+        aria-label="Select page">
+      </mat-paginator>
+
+</div>

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = SuperGroup.Domain
+build_property.ProjectDir = C:\Dev\SuperGroup\WebAPI\SuperGroup.Domain\

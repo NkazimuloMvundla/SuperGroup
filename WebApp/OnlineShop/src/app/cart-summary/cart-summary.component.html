@@ -1,0 +1,15 @@
+<div class="text-right p-1">
+  <small *ngIf="itemCount > 0; else empty" class="mat-body-2 cart-detail">
+    {{ itemCount }} item(s), {{ totalPrice | currency:'ZAR':'symbol' }}
+  </small>
+
+  <button mat-raised-button class="mat-primary m-1 custom-button" [disabled]="itemCount === 0" (click)="navigateToCart()">
+    <mat-icon>add_shopping_cart</mat-icon>
+  <span class="mat-hint">Shopping Cart</span></button>
+
+</div>
+<ng-template #empty>
+  <small class="text-muted">
+    (cart is empty)
+  </small>
+</ng-template>

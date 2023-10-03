@@ -1,0 +1,25 @@
+/* Centered form style */
+.centered-form {
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+/* Style adjustments for mat-form-field */
+mat-form-field {
+  width: 100%; /* Ensure the input fields take the full width */
+
+}
+
+/* Adjust other styles as needed */
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red;
+}
