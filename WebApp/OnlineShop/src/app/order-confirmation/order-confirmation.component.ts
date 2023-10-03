@@ -15,4 +15,9 @@ export class OrderConfirmationComponent {
     router.navigateByUrl("/checkout/step3");
     }
   }
+
+  navigateToHome() {
+    this.router.navigate(['/']);
+  }
+
 }

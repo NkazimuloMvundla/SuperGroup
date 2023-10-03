@@ -29,7 +29,7 @@ namespace SuperGroup.Data.Repositories
         public async Task<int> CreateOrder(OrderDomainModel orderDomainModel)
         {
             orderDomainModel.Shipped = false;
-            // Create the Order entity
+
             var order = new Order
             {
                 Created = DateTime.Now,
@@ -43,7 +43,6 @@ namespace SuperGroup.Data.Repositories
             await _superGroupDBContext.Orders.AddAsync(order);
             await _superGroupDBContext.SaveChangesAsync();
 
-            // Now, you can assign the generated OrderId to the CartLine entities
             foreach (var cartLine in orderDomainModel.Products)
             {
                 var cartLineEntity = new CartLine
