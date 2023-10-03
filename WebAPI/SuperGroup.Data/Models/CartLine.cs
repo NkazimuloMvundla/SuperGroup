@@ -11,6 +11,7 @@ namespace SuperGroup.Data.Models
 
         [Required]
         public int Quantity { get; set; }
+        [Required]
         public long OrderId { get;  set; }
     }
 }
